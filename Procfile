@@ -1,0 +1,1 @@
+web: gunicorn b25tech.wsgi --log-file -
