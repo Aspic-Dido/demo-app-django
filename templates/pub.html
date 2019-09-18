@@ -1,0 +1,31 @@
+{% extends "base.html" %} 
+{% block content %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+    
+    .head_text {
+        color: white;
+    }
+    
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+</style>
+	<p>
+		Ici nous affichons nos publicités
+	</p>
+	<div class="pub_spaces">
+		<div class="first_pub">
+			<p>It's a first pub on our blog. This pub is for Be_Your_Best, an Artistic Plateforme !</p>
+		</div>
+		<div class="second_pub">
+			<p>It's a second pub, in dedicate B35TECH-SAW, it's means 'Web Application Room'.</p>
+		</div>
+		{% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+	</div>
+
+{% endblock %}

@@ -13,3 +13,6 @@ class PostDetail(generic.DetailView):
 	model = Post
 	template_name = 'post_detail.html'
 
+
+def PubSpace(request):
+	return render(request, 'pub.html')
